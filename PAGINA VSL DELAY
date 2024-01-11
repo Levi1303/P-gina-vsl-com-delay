@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página de Vendas</title>
+    <style>
+        /* Adicione seu estilo CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* #32CD32 */
+            color: #333; /* #000000 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .headline {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            /* Mude o estilo da headline aqui */
+        }
+        .buy-button {
+            background-color: #4caf50; /* #008000 */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="video-container">
+            <!-- Adicione o link do seu vídeo aqui -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEnp9Zd_yS4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="headline">
+            <!-- Escreva a sua headline aqui -->
+            Aumente suas vendas com a nossa incrível solução!
+        </div>
+        
+        <button class="buy-button" id="buyButton" onclick="delayRedirect()">Comprar Agora</button>
+
+    </div>
+
+    <script>
+        function delayRedirect() {
+            // Adicione o tempo de delay do botão em milissegundos (por exemplo, 5000 para 5 segundos)
+            var delayTime = 5000;
+
+            setTimeout(function() {
+                // Adicione o link do seu checkout aqui
+                window.location.href = "https://seucheckout.com";
+            }, delayTime);
+        }
+    </script>
+
+</body>
+</html>
